@@ -4,5 +4,5 @@ web:
   vue-app:
     image: hair-salon-vue-vue-app:latest
     ports:
-      - "8080:80"
+      - "8090:80"
     # container_name: vue_app
