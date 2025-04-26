@@ -2,8 +2,9 @@ version: '3.8'
 
 services:
   vue-app:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - "8080:80"
-    # container_name: vue_container
-    restart: unless-stopped
+      - "8080:8080"
+    container_name: vue_app
