@@ -2,7 +2,7 @@
 
 services:
   web:
-    image: your-vue-image:latest
+    image: hair-salon-vue-vue-app:latest
     ports:
       - target: 80         # The port your Vue app listens to inside the container
         published: 8080    # The port you want to expose on the host
