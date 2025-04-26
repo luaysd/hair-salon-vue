@@ -1,8 +1,14 @@
 # version: '3.8'
 
 services:
-  vue-app:
-    image: hair-salon-vue-vue-app:latest
+  web:
+    image: your-vue-image:latest
     ports:
-      - "8090:80"
-    # container_name: vue_app
+      - target: 80         # The port your Vue app listens to inside the container
+        published: 8090    # The port you want to expose on the host
+        protocol: tcp
+        mode: host
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
