@@ -5,7 +5,7 @@ services:
     image: your-vue-image:latest
     ports:
       - target: 80         # The port your Vue app listens to inside the container
-        published: 8090    # The port you want to expose on the host
+        published: 8080    # The port you want to expose on the host
         protocol: tcp
         mode: host
     deploy:
