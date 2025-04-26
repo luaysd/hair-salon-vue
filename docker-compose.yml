@@ -3,5 +3,5 @@
 services:
   vue-app:
     ports:
-      - "8090:80"
+      - "8080:80"
     # container_name: vue_app
