@@ -1,5 +1,5 @@
 # Step 1: Build the application
-FROM node:latest AS builder
+FROM node:lts-alpine AS builder
 
 WORKDIR /app
 
