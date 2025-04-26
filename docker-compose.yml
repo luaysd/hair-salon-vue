@@ -1,14 +1,11 @@
-# version: '3.8'
+version: '3.8'
 
 services:
-  web:
+  vue-app:
     image: hair-salon-vue-vue-app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - target: 80         # The port your Vue app listens to inside the container
-        published: 8080    # The port you want to expose on the host
-        protocol: tcp
-        mode: host
-    deploy:
-      replicas: 1
-      restart_policy:
-        condition: any
+      - "8090:80"
+    restart: unless-stopped
