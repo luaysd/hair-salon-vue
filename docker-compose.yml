@@ -1,6 +1,6 @@
 # version: '3.8'
 
-web:
+services:
   vue-app:
     image: hair-salon-vue-vue-app:latest
     ports:
