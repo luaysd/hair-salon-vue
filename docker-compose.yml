@@ -5,5 +5,5 @@ services:
     build: .
     ports:
       - "8080:80"
-    container_name: vue_container
+    # container_name: vue_container
     restart: unless-stopped
