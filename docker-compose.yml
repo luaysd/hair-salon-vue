@@ -2,10 +2,7 @@ version: '3.8'
 
 services:
   vue-app:
-    image: hair-salon-vue-vue-app:latest
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: luaysd/vue-app
     ports:
       - "8090:80"
     restart: unless-stopped
