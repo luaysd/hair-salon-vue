@@ -2,9 +2,7 @@
 
 services:
   vue-app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: hair-salon-vue-vue-app:latest
     ports:
       - "8080:80"
     # container_name: vue_app
