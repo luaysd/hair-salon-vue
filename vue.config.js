@@ -10,5 +10,11 @@ module.exports = defineConfig({
   },
   configureWebpack: {
     devtool: 'source-map' // or 'eval-source-map' for quicker builds
+  },
+  pages: {
+    index: {
+      entry: 'src/main.ts',
+      title: 'Hair Salon Reservation',
+    }
   }
 })

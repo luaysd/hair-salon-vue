@@ -47,7 +47,7 @@
       </div>
       <div class="col-md-6">
         <section>
-          <iframe width="100%" height="400px"
+          <iframe width="100%" height="400px" loading="lazy"
             src="https://www.youtube.com/embed/-FnrCZJw6TE?autoplay=1&mute=1&controls=0&loop=1&playlist=-FnrCZJw6TE"
             title="CINEMATIC Beauty Salon Commercial" frameborder="0" allow="autoplay; encrypted-media"
             allowfullscreen></iframe>
@@ -109,7 +109,7 @@
         <section id="address">
 
           <p>Beirut, Main road Beirut</p>
-          <iframe
+          <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.7326365546223!2d35.588655384075174!3d33.92994711508773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f17215880a78f%3A0x729182bae99836b4!2sBeirut!5e0!3m2!1sen!2slb!4v1745169035231!5m2!1sen!2slb"
             width="100%" height="450" style="border:0;" allowfullscreen="false" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
