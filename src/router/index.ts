@@ -55,7 +55,7 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
   scrollBehavior(to, from, savedPosition) {
-        
+      
     // 👈 only scroll to hash when NOT going backward
     if (to.hash) {
       return {
