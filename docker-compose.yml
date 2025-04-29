@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   vue-app:
-    image: luaysd/vue-app
+    image: ghcr.io/luaysd/vue-app:latest
     ports:
       - "8090:80"
     restart: unless-stopped

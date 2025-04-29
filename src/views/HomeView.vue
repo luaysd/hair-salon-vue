@@ -61,7 +61,7 @@
         <div ref="scrollContainer" class="scroll-container">
           <div class="scroll-content">
             <div v-for="(service, index) in duplicatedServices" :key="index" class="service-box">
-              <img :src="getImagePath(service)" alt="">
+              <img v-lazy="getImagePath(service)" :alt="service" loading="lazy">
               <p class="service-title">{{ service }}</p>
             </div>
           </div>
@@ -126,6 +126,7 @@ const services = ref([
   'Piercing', 'Solarium'
 ])
 const duplicatedServices = computed(() => [...services.value, ...services.value, ...services.value, ...services.value])
+
 function getImagePath(imageName: string) {
   try {
     return require(`@/assets/images/services/service-${imageName.toLocaleLowerCase()}.jpg`);
@@ -296,6 +297,15 @@ section {
     width: 100%;
     padding: 20px;
     padding-top: 0;
+
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
   }
 
   .scroll-content {
