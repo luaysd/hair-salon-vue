@@ -269,7 +269,7 @@ h3 {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     @media screen and (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -431,6 +431,6 @@ h3 {
   aspect-ratio: 1 / 1;    /* Forces square shape */
   object-fit: cover;      /* Keeps image proportional and fills the square */
   display: block;
-  max-width:30vw ;
+  max-width: 144px ;
 }
 </style>
