@@ -1,10 +1,10 @@
 <template>
   <div id="home" class="banner">
     <div class="banner-content">
-      <h1 class="text">Hair Salon Reservation</h1>
-      <p class="sub-text">Book your appointment today to get a fresh new look !</p>
+      <h1 class="text"> {{$t('home.banner_text')}} </h1>
+      <p class="sub-text">{{$t('home.banner_sub_text')}}</p>
       <router-link :to="'/booking'">
-        <button class="book-btn">Book Now!</button>
+        <button class="book-btn">{{$t('home.book_now')}}</button>
       </router-link>
     </div>
   </div>
@@ -14,7 +14,7 @@
     <div class="row">
       <div class="col-md-6 d-flex flex-column justify-content-start align-items-center">
         <section>
-          <h2>Reviews</h2>
+          <h2>{{$t('home.reviews')}}</h2>
           <ReviewsList :isHomePage="true"></ReviewsList>
           <!-- <div class="reviews">
             <div class="review-card">
@@ -37,7 +37,7 @@
           <div class="text-center">
             <router-link to="/reviews">
               <button class="see-all-reviews-btn">
-                See all reviews
+                {{$t('home.see_all_reviews')}}
               </button>
             </router-link>
           </div>
@@ -55,26 +55,27 @@
       </div>
     </div>
     <section id="services">
-      <h2>{{ $t('services') }}</h2>
+      <h2>{{ $t('home.services') }}</h2>
 
       <div class="services">
         <div ref="scrollContainer" class="scroll-container">
           <div class="scroll-content">
             <div v-for="(service, index) in duplicatedServices" :key="index" class="service-box">
               <img v-lazy="getImagePath(service)" :alt="service" loading="lazy">
-              <p class="service-title">{{ service }}</p>
+              <p class="service-title">{{ $t('services.'+service) }}</p>
             </div>
           </div>
         </div>
       </div>
       <div class="text-center">
         <router-link :to="'/booking'">
-          <button class="book-btn text-center">Book Appointment Now!</button>
+          <button class="book-btn text-center">{{$t('home.book_appointment')}}
+          </button>
         </router-link>
       </div>
     </section>
     <section id="hours">
-      <h2 class="text-center">{{ $t('Opening Hours') }}</h2>
+      <h2 class="text-center">{{ $t('home.opening_hours') }}</h2>
 
       <div class="card shadow-sm mx-auto" style="max-width: 400px;">
         <div class="card-body">
@@ -85,7 +86,7 @@
                 'fw-bold today-text': index === todayIndex,
                 'text-muted': day.open === 'Closed'
               }">
-              <span class="text-capitalize">{{ day.name }}</span>
+              <span >{{ $t('home.'+day.name) }}</span>
               <span>{{ day.open }} <template v-if="day.close">- {{ day.close }}</template></span>
             </li>
           </ul>
@@ -96,7 +97,7 @@
       <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
         <section id="contact">
 
-          <h2>Contact and Location</h2>
+          <h2>{{$t('home.contact_and_location')}}</h2>
           <ul class="text-start">
             <li> <i class="fa-solid fa-phone"></i> <a href="tel:+961705482565">705482565</a> </li>
             <li> <i class="fa-solid fa-envelope"></i> <a href="mailto:luaysd1@gmail.com"> luaysd1@gmail.com</a></li>
@@ -121,9 +122,11 @@
 <script setup lang="ts">
 import ReviewsList from '@/components/Reviews-list.vue';
 import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n()
 const services = ref([
-  'Haircut', 'Facial', 'Massage', 'Gelish', 'Manicure', 'Pedicure',
-  'Piercing', 'Solarium'
+  'haircut', 'facial', 'massage', 'gelish', 'manicure', 'pedicure',
+  'piercing', 'solarium'
 ])
 const duplicatedServices = computed(() => [...services.value, ...services.value, ...services.value, ...services.value])
 
@@ -170,7 +173,7 @@ const week = ref([
   { name: 'thursday', open: '9:00 AM', close: '6:00 PM' },
   { name: 'friday', open: '9:00 AM', close: '6:00 PM' },
   { name: 'saturday', open: '10:00 AM', close: '4:00 PM' },
-  { name: 'sunday', open: 'Closed', close: '' }
+  { name: 'sunday', open: t("home.closed"), close: '' }
 ])
 
 const todayIndex = computed(() => {

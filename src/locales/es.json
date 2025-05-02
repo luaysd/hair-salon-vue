@@ -1,0 +1,63 @@
+{
+    "app": {
+        "salon_title": "Mi Salón"
+    },
+    "menu": {
+        "home": "Inicio",
+        "services": "Servicios",
+        "address": "Dirección",
+        "contact": "Contacto",
+        "about": "Sobre Nosotros",
+        "book_now": "¡Reserva Ahora!"
+    },
+    "home": {
+        "reviews": "Reseñas",
+        "see_all_reviews": "Ver todas las reseñas",
+        "services": "Servicios",
+        "book_appointment": "¡Reservar cita!",
+        "opening_hours": "Horario de apertura",
+        "banner_text": "Reserva de Peluquería",
+        "banner_sub_text": "¡Reserva tu cita hoy para un nuevo look!",
+        "book_now": "¡Reserva Ahora!",
+        "monday": "Lunes",
+        "tuesday": "Martes",
+        "wednesday": "Miércoles",
+        "thursday": "Jueves",
+        "friday": "Viernes",
+        "saturday": "Sábado",
+        "sunday": "Domingo",
+        "closed": "Cerrado",
+        "contact_and_location": "Contacto y ubicación"
+    },
+    "services": {
+        "haircut": "Corte de pelo",
+        "facial": "Facial",
+        "massage": "Masaje",
+        "gelish": "Gelish",
+        "manicure": "Manicura",
+        "pedicure": "Pedicura",
+        "piercing": "Piercing",
+        "solarium": "Solárium"
+    },
+    "booking": {
+        "title": "Reservar una cita",
+        "services": "Servicios",
+        "select": "Seleccionar",
+        "minutes": "min",
+        "date": "Fecha",
+        "time": "Hora",
+        "employee": "Empleado",
+        "summary": "Resumen",
+        "total": "Total",
+        "confirm": "Confirmar",
+        "at": "a las",
+        "Su": "Lunes",
+        "Mo": "Martes",
+        "Tu": "Miércoles",
+        "We": "Jueves",
+        "Th": "Viernes",
+        "Fr": "Sábado",
+        "Sa": "Domingo"
+
+    }
+}

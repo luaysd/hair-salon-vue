@@ -28,7 +28,7 @@ import NavBar from '@/components/Nav-bar.vue';
   display: flex;
   flex-direction: column;
   gap: 0;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: space-between;
 }
 nav {

@@ -1,0 +1,63 @@
+{
+    "app": {
+        "salon_title": "Mein Salon"
+    },
+    "menu": {
+        "home": "Startseite",
+        "services": "Dienstleistungen",
+        "address": "Adresse",
+        "contact": "Kontakt",
+        "about": "Über uns",
+        "book_now": "Jetzt buchen!"
+    },
+    "home": {
+        "reviews": "Bewertungen",
+        "see_all_reviews": "Alle Bewertungen ansehen",
+        "services": "Dienstleistungen",
+        "book_appointment": "Termin buchen!",
+        "opening_hours": "Öffnungszeiten",
+        "banner_text": "Friseursalon Reservierung",
+        "banner_sub_text": "Buchen Sie jetzt Ihren Termin für einen frischen neuen Look!",
+        "book_now": "Jetzt buchen!",
+        "monday": "Montag",
+        "tuesday": "Dienstag",
+        "wednesday": "Mittwoch",
+        "thursday": "Donnerstag",
+        "friday": "Freitag",
+        "saturday": "Samstag",
+        "sunday": "Sonntag",
+        "closed": "Geschlossen",
+        "contact_and_location": "Kontakt und Standort"
+    },
+    "services": {
+        "haircut": "Haarschnitt",
+        "facial": "Gesichtsbehandlung",
+        "massage": "Massage",
+        "gelish": "Gelish",
+        "manicure": "Maniküre",
+        "pedicure": "Pediküre",
+        "piercing": "Piercing",
+        "solarium": "Solarium"
+    },
+    "booking": {
+        "title": "Einen Termin buchen",
+        "services": "Dienstleistungen",
+        "select": "Auswählen",
+        "minutes": "Min",
+        "date": "Datum",
+        "time": "Uhrzeit",
+        "employee": "Mitarbeiter",
+        "summary": "Zusammenfassung",
+        "total": "Gesamt",
+        "confirm": "Bestätigen",
+        "at": "um",
+        "Su": "Montag",
+        "Mo": "Dienstag",
+        "Tu": "Mittwoch",
+        "We": "Donnerstag",
+        "Th": "Freitag",
+        "Fr": "Samstag",
+        "Sa": "Sonntag"
+
+    }
+}

@@ -1,4 +1,62 @@
 {
-    "home": "Home",
-    "services": "Services"
+    "app": {
+        "salon_title": "My Salon"
+    },
+    "menu": {
+        "home": "Home",
+        "services": "Services",
+        "address": "Address",
+        "contact": "Contact",
+        "about": "About Us",
+        "book_now": "Book Now !"
+    },
+    "home": {
+        "reviews": "Reviews",
+        "see_all_reviews": "See All Reviews",
+        "services": "Services",
+        "book_appointment": "Book Appointment !",
+        "opening_hours": "Opening Hours",
+        "banner_text": "Hair Salon Reservation",
+        "banner_sub_text": "Book your appointment today to get a fresh new look !",
+        "book_now": "Book Now !",
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "closed": "Closed",
+        "contact_and_location": "Contact and Location"
+    },
+    "services": {
+        "haircut": "Haircut",
+        "facial": "Facial",
+        "massage": "Massage",
+        "gelish": "Gelish",
+        "manicure": "Manicure",
+        "pedicure": "Pedicure",
+        "piercing": "Piercing",
+        "solarium": "Solarium"
+    },
+    "booking": {
+        "title": "Book an Appointment",
+        "services": "Services",
+        "select": "Select",
+        "minutes": "min",
+        "date": "Date",
+        "time": "Time",
+        "employee": "Employee",
+        "summary": "Summary",
+        "total": "Total",
+        "confirm": "Confirm",
+        "at": "at",
+        "Su": "Sunday",
+        "Mo": "Monday",
+        "Tu": "Tuesday",
+        "We": "Wednesday",
+        "Th": "Thurday",
+        "Fr": "Friday",
+        "Sa": "Saturday"
+    }
 }

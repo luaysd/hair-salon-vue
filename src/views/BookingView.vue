@@ -1,22 +1,22 @@
 <template>
     <div class="booking-container">
-        <h1 class="text-center mb-5">Book an Appointment</h1>
+        <h1 class="text-center mb-5">{{$t("booking.title")}}</h1>
       
 
-        <h2 >Services</h2>
+        <h2 >{{$t("booking.services")}}</h2>
         <div class="services-grid">
             <div v-for="service in services" :key="service.key" class="service-button"
                 :class="{ 'selected': selectedService.includes(service)  }">
                 <div class="row">
                     <div class="col-6">
-                        <img :src="getImagePath(service.key)" width="100px" height="100px" alt="">
+                        <img :src="getImagePath(service.key)" width="100px" height="100px" alt="" class="service-img">
                     </div>
                     <div class="col-6">
-                        <div class="flex flex-column">
-                            <p>{{ service.name }}</p>
-                            <p>{{ service.duration }} min</p>
+                        <div class="d-flex flex-column align-items-center justify-content-center h-100 w-100">
+                            <p>{{ $t("services."+service.key) }}</p>
+                            <p>{{ service.duration }} {{$t("booking.minutes")}}</p>
                             <p>${{ service.price }}</p>
-                            <button type="button" class="select-service-button"  @click="selectService(service)"> <template v-if="selectedService.includes(service)" ><i class="fa-solid fa-check"></i></template ><template v-else >Select</template></button>
+                            <button type="button" class="select-service-button"  @click="selectService(service)"> <template v-if="selectedService.includes(service)" ><i class="fa-solid fa-check"></i></template ><template v-else >{{$t("booking.select")}}</template></button>
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
             <!-- <h2>Extensions</h2> -->
 
             <div class="date-section">
-                <h3>Date</h3>
+                <h3>{{$t("booking.date")}}</h3>
                 <div class="calendar-header">
                     <button class="nav-button" @click="previousMonth">&lt;</button>
                     <span class="month-year">{{ currentMonth }} {{ currentYear }}</span>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="calendar-grid">
                     <div v-for="day in ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']" :key="day" class="day-header">
-                        {{ day }}
+                        {{ $t('booking.'+day).slice(0, 3) }}
                     </div>
                     <div v-for="day in calendarDays" :key="day.date" class="calendar-day" :class="{
                         'current-month': day.isCurrentMonth,
@@ -51,7 +51,7 @@
             <hr class="divider">
 
             <div class="time-section">
-                <h3>Time</h3>
+                <h3>{{$t("booking.time")}}</h3>
                 <div class="time-grid">
                     <button v-for="time in availableTimes" :key="time" class="time-button"
                         :class="{ 'selected': selectedTime === time }" @click="selectTime(time)">
@@ -63,7 +63,7 @@
             <hr class="divider">
 
             <div class="employee-section">
-                <h3>Employee</h3>
+                <h3>{{$t("booking.employee")}}</h3>
                 <div class="employee-grid">
                     <button v-for="employee in employees" :key="employee" class="employee-button"
                         :class="{ 'selected': selectedEmployee === employee }" @click="selectEmployee(employee)">
@@ -75,16 +75,16 @@
     </div>
     <!-- <div :class="getSummaryClasses()"> -->
         <div class="summary mt-5">
-            <h2>Summary</h2>
-            Total: {{ totalDuration }} min | 
+            <h2>{{$t("booking.summary")}}</h2>
+            {{$t("booking.total")}}: {{ totalDuration }} {{$t("booking.minutes")}} | 
              ${{ totalPrice }}
             <p>
                 <template v-for="(service,index) in selectedService" :key="service.key"  >
-                    {{ service.name }}<span v-if="index !== selectedService.length - 1">, </span>
+                    {{ $t('services.'+service.key) }}<span v-if="index !== selectedService.length - 1">, </span>
                 </template>
             </p>
             <div v-if="selectedDate">
-                at {{ summaryDate }}
+                {{$t("booking.at")}} {{ summaryDate }}
                 <span v-if="selectedTime" >{{ selectedTime }}</span>
             </div>
         </div>
@@ -92,12 +92,14 @@
 
      
     <div class="text-center mb-4">
-        <button class="confirm-btn text-center">Confirm</button>
+        <button class="confirm-btn text-center">{{$t("booking.confirm")}}</button>
     </div>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+const { t,locale , fallbackLocale } = useI18n()
 
 // State
 const services = ref([
@@ -202,7 +204,7 @@ function selectService(service) {
     }
 }
 
-let summaryDate = computed(()=> new Date(selectedDate.value).toLocaleDateString('en-GB', {
+let summaryDate = computed(()=> new Date(selectedDate.value).toLocaleDateString(locale.value, {
   weekday: 'long', // 'short' gives abbreviated weekday (e.g., "Wed")
   day: '2-digit', // '2-digit' gives day in 2 digits (e.g., "15")
   month: 'long', // 'long' gives full month name (e.g., "April")
@@ -250,7 +252,10 @@ function getImagePath(imageName: string) {
 
 <style scoped lang="scss">
 .booking-container {
-    max-width: 600px;
+    max-width: 40vw;
+    @media screen and (max-width: 768px) {
+        max-width: 100%;
+    }
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -264,7 +269,7 @@ h3 {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     @media screen and (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -281,6 +286,9 @@ h3 {
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.2s;
+    word-wrap: break-word;      /* For long words */
+  overflow-wrap: break-word;  /* Modern equivalent */
+  white-space: normal;    
 }
 
 .service-button:hover,
@@ -411,5 +419,18 @@ h3 {
     padding: 5px 00px;
     width: 100%;
     color: black;
+}
+.service-img{
+ 
+
+  @media screen and (max-width: 768px) {
+   
+    }
+    width: 100%;
+    height: 100%;            /* Takes max width of parent */
+  aspect-ratio: 1 / 1;    /* Forces square shape */
+  object-fit: cover;      /* Keeps image proportional and fills the square */
+  display: block;
+  max-width:30vw ;
 }
 </style>

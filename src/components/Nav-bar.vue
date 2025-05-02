@@ -3,15 +3,15 @@
 
         <button class="hamburger" @click="toggleMenu">&#9776;</button>
 
-        <div class="navbar-brand">MySalon</div>
+        <div class="navbar-brand">{{$t('app.salon_title')}}</div>
 
         <nav class="navbar-menu">
             <ul>
-                <li><router-link :to="'/home#home'">{{$t('home')}}</router-link></li>
-                <li><router-link :to="'/home#services'">Services</router-link></li>
-                <li><router-link :to="'/home#address'">Address</router-link></li>
-                <li><router-link :to="'/home#contact'">Contact</router-link></li>
-                <li><router-link :to="'/about'">About Us</router-link></li>
+                <li><router-link :to="'/home#home'">{{$t('menu.home')}}</router-link></li>
+                <li><router-link :to="'/home#services'">{{$t('menu.services')}}</router-link></li>
+                <li><router-link :to="'/home#address'">{{$t('menu.address')}}</router-link></li>
+                <li><router-link :to="'/home#contact'">{{$t('menu.contact')}}</router-link></li>
+                <li><router-link :to="'/about'">{{$t('menu.about')}}</router-link></li>
 
             </ul>
         </nav>
@@ -20,14 +20,18 @@
 
             <template v-if="showNav" >
                 <router-link :to="'/booking'">
-                    <button class="primary-btn">Book Now!</button>
+                    <button class="primary-btn">{{$t('menu.book_now')}}</button>
                 </router-link>
             </template>
             <div class="navbar-lang">
                 <select v-model="lang" @change="changeLocale">
                     <option value="en">EN</option>
-                    <option value="fr">FR</option>
                     <option value="ar">AR</option>
+                    <option value="fr">FR</option>
+                    <option value="es">ES</option>
+                    <option value="de">DE</option>
+                    <option value="it">IT</option>
+                    <option value="tr">TR</option>
                 </select>
             </div>
         </div>
@@ -36,15 +40,15 @@
     <div class="side-menu" :class="{ open: isMenuOpen , rtl : isRtl }">
         <div class="d-flex flex-row justify-content-start align-items-center gap-0">
             <button class="close-btn" @click="toggleMenu">&times;</button>
-            <div class="navbar-brand">MySalon</div>
+            <div class="navbar-brand">{{$t('app.salon_title')}}</div>
         </div>
 
         <ul class="nav-items ">
-            <li class="text-start"><router-link @click="toggleMenu" :to="'/home#home'">Home</router-link></li>
-            <li class="text-start"><router-link @click="toggleMenu" :to="'/home#services'">Services</router-link></li>
-            <li class="text-start"><router-link @click="toggleMenu" :to="'/home#address'">Address</router-link></li>
-            <li class="text-start"><router-link @click="toggleMenu" :to="'/home#contact'">Contact</router-link></li>
-            <li class="text-start"><router-link @click="toggleMenu" :to="'/about'">About Us</router-link></li>
+            <li class="text-start"><router-link @click="toggleMenu" :to="'/home#home'">{{$t('menu.home')}}</router-link></li>
+            <li class="text-start"><router-link @click="toggleMenu" :to="'/home#services'">{{$t('menu.services')}}</router-link></li>
+            <li class="text-start"><router-link @click="toggleMenu" :to="'/home#address'">{{$t('menu.address')}}</router-link></li>
+            <li class="text-start"><router-link @click="toggleMenu" :to="'/home#contact'">{{$t('menu.contact')}}</router-link></li>
+            <li class="text-start"><router-link @click="toggleMenu" :to="'/about'">{{$t('menu.about')}}</router-link></li>
         </ul>
     </div>
 

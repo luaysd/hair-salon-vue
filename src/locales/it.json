@@ -1,0 +1,63 @@
+{
+  "app": {
+    "salon_title": "Il Mio Salone"
+  },
+  "menu": {
+    "home": "Home",
+    "services": "Servizi",
+    "address": "Indirizzo",
+    "contact": "Contatto",
+    "about": "Chi siamo",
+    "book_now": "Prenota ora!"
+  },
+  "home": {
+    "reviews": "Recensioni",
+    "see_all_reviews": "Vedi tutte le recensioni",
+    "services": "Servizi",
+    "book_appointment": "Prenota un appuntamento!",
+    "opening_hours": "Orari di apertura",
+    "banner_text": "Prenotazione Salone",
+    "banner_sub_text": "Prenota il tuo appuntamento oggi per un nuovo look!",
+    "book_now": "Prenota ora!",
+    "monday": "Lunedì",
+    "tuesday": "Martedì",
+    "wednesday": "Mercoledì",
+    "thursday": "Giovedì",
+    "friday": "Venerdì",
+    "saturday": "Sabato",
+    "sunday": "Domenica",
+    "closed": "Chiuso",
+    "contact_and_location": "Contatto e posizione"
+  },
+  "services": {
+    "haircut": "Taglio di capelli",
+    "facial": "Trattamento viso",
+    "massage": "Massaggio",
+    "gelish": "Gelish",
+    "manicure": "Manicure",
+    "pedicure": "Pedicure",
+    "piercing": "Piercing",
+    "solarium": "Solarium"
+  },
+  "booking": {
+    "title": "Prenota un appuntamento",
+    "services": "Servizi",
+    "select": "Seleziona",
+    "minutes": "min",
+    "date": "Data",
+    "time": "Ora",
+    "employee": "Dipendente",
+    "summary": "Riepilogo",
+    "total": "Totale",
+    "confirm": "Conferma",
+    "at": "alle",
+    "Su": "Lunedì",
+    "Mo": "Martedì",
+    "Tu": "Mercoledì",
+    "We": "Giovedì",
+    "Th": "Venerdì",
+    "Fr": "Sabato",
+    "Sa": "Domenica"
+
+  }
+}

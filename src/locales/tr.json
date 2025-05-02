@@ -1,0 +1,63 @@
+{
+  "app": {
+    "salon_title": "Benim Salonum"
+  },
+  "menu": {
+    "home": "Anasayfa",
+    "services": "Hizmetler",
+    "address": "Adres",
+    "contact": "İletişim",
+    "about": "Hakkımızda",
+    "book_now": "Hemen Randevu Al !"
+  },
+  "home": {
+    "reviews": "Yorumlar",
+    "see_all_reviews": "Tüm Yorumları Gör",
+    "services": "Hizmetler",
+    "book_appointment": "Randevu Al !",
+    "opening_hours": "Çalışma Saatleri",
+    "banner_text": "Kuaför Randevusu",
+    "banner_sub_text": "Yeni bir görünüm için bugün randevunuzu alın !",
+    "book_now": "Hemen Randevu Al !",
+    "monday": "Pazartesi",
+    "tuesday": "Salı",
+    "wednesday": "Çarşamba",
+    "thursday": "Perşembe",
+    "friday": "Cuma",
+    "saturday": "Cumartesi",
+    "sunday": "Pazar",
+    "closed": "Kapalı",
+    "contact_and_location": "İletişim ve Konum"
+  },
+  "services": {
+    "haircut": "Saç Kesimi",
+    "facial": "Yüz Bakımı",
+    "massage": "Masaj",
+    "gelish": "Jel Oje",
+    "manicure": "Manikür",
+    "pedicure": "Pedikür",
+    "piercing": "Piercing",
+    "solarium": "Solaryum"
+  },
+  "booking": {
+    "title": "Randevu Al",
+    "services": "Hizmetler",
+    "select": "Seç",
+    "minutes": "dk",
+    "date": "Tarih",
+    "time": "Saat",
+    "employee": "Çalışan",
+    "summary": "Özet",
+    "total": "Toplam",
+    "confirm": "Onayla",
+    "at": "saat",
+    "Su": "Salı",
+    "Mo": "Çarşamba",
+    "Tu": "Perşembe",
+    "We": "Cuma",
+    "Th": "Cumartesi",
+    "Fr": "Pazar",
+    "Sa": "Kapalı"
+
+  }
+}

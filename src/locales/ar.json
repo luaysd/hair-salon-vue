@@ -1,5 +1,62 @@
 {
-    "home": "الرئيسية",
-    "welcome": "مرحبًا بكم في MySalon!",
-    "services": "الخدمات"
+    "app": {
+        "salon_title": "صالوني"
+    },
+    "menu": {
+        "home": "الرئيسية",
+        "services": "الخدمات",
+        "address": "العنوان",
+        "contact": "اتصل بنا",
+        "about": "من نحن",
+        "book_now": "احجز الآن !"
+    },
+    "home": {
+        "reviews": "المراجعات",
+        "see_all_reviews": "عرض كل المراجعات",
+        "services": "الخدمات",
+        "book_appointment": "احجز موعدًا !",
+        "opening_hours": "ساعات العمل",
+        "banner_text": "حجز صالون التجميل",
+        "banner_sub_text": "احجز موعدك اليوم للحصول على مظهر جديد !",
+        "book_now": "احجز الآن !",
+        "monday": "الاثنين",
+        "tuesday": "الثلاثاء",
+        "wednesday": "الأربعاء",
+        "thursday": "الخميس",
+        "friday": "الجمعة",
+        "saturday": "السبت",
+        "sunday": "الأحد",
+        "closed": "مغلق",
+        "contact_and_location": "الاتصال والموقع"
+    },
+    "services": {
+        "haircut": "قص شعر",
+        "facial": "عناية بالوجه",
+        "massage": "تدليك",
+        "gelish": "جلش",
+        "manicure": "مانيكير",
+        "pedicure": "باديكير",
+        "piercing": "ثقب",
+        "solarium": "تسمير البشرة"
+    },
+    "booking": {
+        "title": "احجز موعدًا",
+        "services": "الخدمات",
+        "select": "اختر",
+        "minutes": "دقيقة",
+        "date": "التاريخ",
+        "time": "الوقت",
+        "employee": "الموظف",
+        "summary": "الملخص",
+        "total": "الإجمالي",
+        "confirm": "تأكيد",
+        "at" : "",
+        "Su": "الاثنين",
+        "Mo": "الثلاثاء",
+        "Tu": "الأربعاء",
+        "We": "الخميس",
+        "Th": "الجمعة",
+        "Fr": "السبت",
+        "Sa": "الأحد"
+    }
 }

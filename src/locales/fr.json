@@ -1,5 +1,63 @@
 {
-    "home": "Accueil",
-    "welcome": "Bienvenue à MySalon!",
-    "services": "Prestations"
+    "app": {
+        "salon_title": "Mon Salon"
+    },
+    "menu": {
+        "home": "Accueil",
+        "services": "Services",
+        "address": "Adresse",
+        "contact": "Contact",
+        "about": "À propos",
+        "book_now": "Réservez maintenant !"
+    },
+    "home": {
+        "reviews": "Avis",
+        "see_all_reviews": "Voir tous les avis",
+        "services": "Services",
+        "book_appointment": "Prendre rendez-vous !",
+        "opening_hours": "Heures d'ouverture",
+        "banner_text": "Réservation Salon de Coiffure",
+        "banner_sub_text": "Prenez rendez-vous aujourd'hui pour un nouveau look !",
+        "book_now": "Réservez maintenant !",
+        "monday": "Lundi",
+        "tuesday": "Mardi",
+        "wednesday": "Mercredi",
+        "thursday": "Jeudi",
+        "friday": "Vendredi",
+        "saturday": "Samedi",
+        "sunday": "Dimanche",
+        "closed": "Fermé",
+        "contact_and_location": "Contact et emplacement"
+    },
+    "services": {
+        "haircut": "Coupe de cheveux",
+        "facial": "Soin du visage",
+        "massage": "Massage",
+        "gelish": "Gelish",
+        "manicure": "Manucure",
+        "pedicure": "Pédicure",
+        "piercing": "Piercing",
+        "solarium": "Solarium"
+    },
+    "booking": {
+        "title": "Prendre un rendez-vous",
+        "services": "Services",
+        "select": "Sélectionner",
+        "minutes": "min",
+        "date": "Date",
+        "time": "Heure",
+        "employee": "Employé",
+        "summary": "Résumé",
+        "total": "Total",
+        "confirm": "Confirmer",
+        "at": "à",
+        "Su": "Lundi",
+        "Mo": "Mardi",
+        "Tu": "Mercredi",
+        "We": "Jeudi",
+        "Th": "Vendredi",
+        "Fr": "Samedi",
+        "Sa": "Dimanche"
+
+    }
 }
