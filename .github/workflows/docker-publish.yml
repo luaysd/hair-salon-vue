@@ -14,6 +14,7 @@ jobs:
     permissions:
       contents: read
       packages: write  # ✅ required for pushing to GHCR
+      id-token: write       # Needed for authentication (sometimes)
 
     steps:
       - name: Checkout repo
