@@ -33,3 +33,4 @@ jobs:
           context: .
           push: true
           tags: ghcr.io/luaysd/vue-app:latest
+          visibility: private
