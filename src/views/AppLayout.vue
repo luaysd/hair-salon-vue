@@ -13,7 +13,7 @@
     </main>
     
     <footer>
-      <p>Developed By Luay Sariedeen</p>
+      <p style="font-size: 23px;">Developed By <a href="http://luaysd.oncloudlb.com" target="_blank" rel="noopener noreferrer" class="link">Luay Sariedeen</a> </p>
     </footer>
   </div>
 </template>

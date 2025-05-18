@@ -50,6 +50,8 @@
             <li class="text-start"><router-link @click="toggleMenu" :to="'/home#contact'">{{$t('menu.contact')}}</router-link></li>
             <li class="text-start"><router-link @click="toggleMenu" :to="'/about'">{{$t('menu.about')}}</router-link></li>
         </ul>
+
+        <p style="font-size: 23px;margin-top: auto;">Developed By <a href="http://luaysd.oncloudlb.com" target="_blank" rel="noopener noreferrer" class="link">Luay Sariedeen</a> </p>
     </div>
 
 </template>
@@ -153,8 +155,8 @@ watch(() => route.path, setupScrollListener)
 }
 
 .navbar-menu a {
-    color: $text-color;
-    text-decoration: none;
+    //color: $text-color;
+    // text-decoration: none;
     transition: color 0.1s ease-in;
 
     &:hover {

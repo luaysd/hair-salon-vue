@@ -37,11 +37,14 @@ dl, dd {
     padding: 0;
   }
   a{
-    text-decoration: none;
-    color: black;
+    color: $buttons-color !important;
     transition: color .1s ease-in;
+    &:not(.link){
+    text-decoration: none;
+    color: black !important;
+  }
     &:hover{
-        color: $buttons-color;
+        color: $buttons-color !important;
     }
   }
   // nav {
