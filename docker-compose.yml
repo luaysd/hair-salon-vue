@@ -1,3 +1,4 @@
+version: '3.8'
 
 services:
   vue-app:
@@ -7,6 +8,7 @@ services:
     restart: unless-stopped
     labels:
       - "com.centurylinklabs.watchtower.enable=true"
+
   watchtower:
     image: containrrr/watchtower
     volumes:
