@@ -1,11 +1,8 @@
 version: '3.8'
 
 services:
-
   vue-app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/luaysd/vue-app:latest
     ports:
       - "8090:80"
     restart: unless-stopped
